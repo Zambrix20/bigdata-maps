@@ -65,8 +65,8 @@ export class MapComponent implements AfterViewInit {
  {
   this.dataApiService.getEstados().subscribe((estados: any) => {
     this.arrEstados = estados;
+    console.log(this.arrEstados);
    });
- 
  }
 
  private getUnidades()
@@ -74,7 +74,6 @@ export class MapComponent implements AfterViewInit {
   this.dataApiService.getUnidades().subscribe((unidades: any) => {
     this.arrActividades = unidades;
    });
- 
  }
  
  private changeEstado()
@@ -82,11 +81,8 @@ export class MapComponent implements AfterViewInit {
    this.dataApiService.getMunicipios(this.selectedEstado)
    .subscribe((municipios: any) => {
     this.arrMunicipios = municipios;
-
    });
- 
  }
- 
 
  private buscarDenues()
  {
@@ -96,8 +92,5 @@ export class MapComponent implements AfterViewInit {
     this.selectedMunicipio,
     this.selectedUnidad
     );
-
- }
-
- 
+ } 
 }

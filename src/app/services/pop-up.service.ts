@@ -18,6 +18,7 @@ export class PopUpService {
     return `` +
       `<div>Capital: ${ data.nombre }</div>` +
       `<div>State: ${ data.calle }</div>` +
-      `<div>Population: ${ data.municipio }</div>`
+      `<div>Population: ${ data.municipio }</div>` +
+      `<div>Population: ${ data.estado }</div>`
   }
 }

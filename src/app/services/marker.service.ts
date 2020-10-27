@@ -37,11 +37,9 @@ export class MarkerService {
           //.addTo(map);
         }
       });
-    
   }
 
-  makeCapitalMarkers(map: L.map): void {
-  
+  makeCapitalMarkers(map: L.map): void {  
           this.http.get(this.capitals).subscribe((res: any) => {
         for (const c of res.features) {
           const lat = c.geometry.coordinates[0];
