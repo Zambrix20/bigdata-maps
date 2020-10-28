@@ -301,7 +301,8 @@ var DataApiService = /** @class */ (function () {
     // apiURL = 'https://valid-decoder-258800.appspot.com/';
     function DataApiService(http) {
         this.http = http;
-        this.apiURL = 'http://localhost:8080/api/auth/';
+        // apiURL = 'http://localhost:8080/api/auth/';
+        this.apiURL = 'http://104.198.244.0:8099/api/auth/';
         /*========================================
           CRUD Methods for consuming RESTful API
         =========================================*/
